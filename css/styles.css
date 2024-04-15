@@ -1,0 +1,136 @@
+:root{
+
+    --dark: #0c0c0c;
+    --ligth: #f4f4f4;
+
+    --cinza-500: #171718;
+    --cinza-400: #1f2124;
+    --cinza-300: #393d42;
+    --cinza-200: #6a6e73;
+    --cinza-100: #9fa3a9;
+
+    --yellow: #FEED08;
+    --red: #da2424;
+    --green: #3bd440;
+
+    --montserrat: 'Montserrat', sans-serif;
+    --star-wars: 'Star Jedi', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: var(--ligth);
+    background-color: var(--dark);
+    font-family: var(--montserrat);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.title-star-wars-style{
+    font-family: var(--star-wars);
+    font-size: 3rem;
+    color: var(--yellow);
+    text-align: center;
+}
+
+.war-area-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+#vs-image{
+    width: 100px;
+}
+
+.lado-style-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cinza-400);
+    padding: 20px;
+    border-radius: 30px;
+    gap:10px;
+    transition: all 0.5s ease-in;
+    border: none;
+}
+
+.vencedor{
+    border: solid 5px var(--green);
+}
+
+.perdedor{
+    border: solid 5px var(--red);
+}
+
+.lado-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--cinza-500);
+    padding: 3px 20px;
+    border-radius: 30px;
+    width: 80%;
+}
+
+
+.icone-order{
+    width: 32px;
+}
+
+.lado-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.campeao-order img{
+    height: 32vh;
+}
+
+.dados-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.button-content button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--cinza-500);
+    color: var(--cinza-200);
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+.button-content button:hover{
+    background-color: var(--cinza-300);
+    color: var(--ligth);
+    transform: scale(1.1);
+}
+

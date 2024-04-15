@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="autor" content="Matheus Barbosa" />
+    <meta name="curso" content="Técnico em Desenvolvimento de Sistemas" />
+    <meta
+      name="modulo"
+      content="Programação em Novas Tecnologias Avançadas Web"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="assets/icon.svg" type="image/x-icon" />
+    
+    <script src="js/script.js" defer></script>
+
+    <title>Star Wars - Batalha dos Dados</title>
+  </head>
+  <body>
+    <main>
+      <span class="title-star-wars-style">Star Wars</span>
+      <div>
+        <div class="war-area-content">
+
+          <div id="jedi-side" class="lado-style-content">
+            <div class="lado-title">
+              <img
+                class="icone-order"
+                src="assets/jedi-order.png"
+                alt="icone"
+              />
+              <span>Jedi</span>
+            </div>
+
+            <div class="lado-body">
+              <div class="campeao-order">
+                <img src="assets/yoda.webp" alt="mestre yoda" />
+              </div>
+
+              <div>
+                <div class="dados-content">
+                  <p>🎲 <span id="dado-jedi-1"> -- </span></p>
+                  <p>🎲 <span id="dado-jedi-2"> -- </span></p>
+                  <p>🎲 <span id="dado-jedi-3"> -- </span></p>
+                </div>
+
+                <div>
+                  <p>🔥 Poder: <span id="poder-jedi"> -- </span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img id="vs-image" src="assets/vs.png" alt="VS" />
+          </div>
+
+          <div id="sith-side" class="lado-style-content">
+            <div class="lado-title">
+              <img
+                class="icone-order"
+                src="assets/sith-order.svg"
+                alt="icone"
+              />
+              <span>Sith</span>
+            </div>
+
+            <div class="lado-body">
+              <div class="campeao-order">
+                <img src="assets/vader.webp" alt="darth vader" />
+              </div>
+
+              <div>
+                <div class="dados-content">
+                  <p>🎲 <span id="dado-sith-1"> -- </span></p>
+                  <p>🎲 <span id="dado-sith-2"> -- </span></p>
+                  <p>🎲 <span id="dado-sith-3"> -- </span></p>
+                </div>
+
+                <div>
+                  <p>🔥 Poder: <span id="poder-sith"> -- </span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-content">
+        <button onclick="jogarDados()">Calcular</button>
+      </div>
+    </main>
+  </body>
+</html>
